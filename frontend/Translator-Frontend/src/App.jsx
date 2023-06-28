@@ -20,7 +20,7 @@ const [audioUrl, setAudioUrl] = useState('')
 
 function handleapi(){
   setLoading(true);
- axios.post('http://localhost:8080/translate',{
+ axios.post('http://13.236.116.203:8080/translate',{
     text: inputValue,
     target: 'hi'
   }).then((res)=>{
